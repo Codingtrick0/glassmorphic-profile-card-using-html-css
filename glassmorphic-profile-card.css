@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+.container {
+    position: relative;
+}
+
+/* 3 */
+.circle {
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(45deg, #fc00ff, #00dbde);
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+
+.circle:nth-child(2) {
+    top: 112px;
+    left: -65px;
+    background: linear-gradient(45deg, #2980B9, #6DD5FA, #ffffff);
+    
+}
+
+/* 4 */
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    padding-top: 20px;
+}
+
+.profile-img {
+    height: 100px;
+    width: 100px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255 255 255 / 11%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.profile-img img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.designation {
+    text-transform: uppercase;
+    color: gainsboro;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.glass-btn {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin: 20px 0;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    height: 50px;
+    border-radius: 4px;
+    width: 120px;
+    transition: width  2s ;
+}
+.glass-btn:hover {
+    background:linear-gradient(290deg ,violet,pink) ;
+    width: 200px;
+}
+.ratings {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgb(255 255 255 / 11%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 9px 0;
+}
+
+.ratings p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partition {
+    width: 2px;
+    background-color: white;
+    margin: 0 15px;
+}
